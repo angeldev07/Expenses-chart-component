@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Expenses chart component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="main">
+
+    <section class="container">
+
+      <div class="component-head flex-b">
+        <div class="texts">
+          <span class="legend">My balance</span>
+          <p class="text--fw">$921.48</p>
+        </div>
+        <div class="head-logo">
+          <img src="./images/logo.svg" alt="logo" class="logo">
+        </div>
+      </div>
+
+      <div class="component-body">
+        <h1 class="title">Spending - Last 7 days</h1>
+        
+        <div class="chart-container ">
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">mon</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">tue</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">wed</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">thu</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">fri</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">sat</span>
+          </div>
+
+          <div class="chart">
+            <span class="amount"></span>
+            <div class="bar"></div>
+            <span class="day">sun</span>
+          </div>
+        </div>
+
+        <div class="componenet-footer flex-b">
+          <div class="texts">
+            <span class="legend legend--color">Total this month</span>
+            <p class="text--fw text-color">$478.33</p>
+          </div>
+          <div class="porcentaje">
+            <span class="text--fw text-color text--fz"> +2.4%</span>
+            <p class="legend legend--color">from last month</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

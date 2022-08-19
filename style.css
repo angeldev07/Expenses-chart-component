@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+html{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --head-bars: hsl(10, 79%, 65%);
+    --actualDay: hsl(186, 34%, 60%);
+    --title-porcentage-money: hsl(25, 47%, 15%);
+    --total-from-days: hsl(28, 10%, 53%);
+    --text-head-bgc: hsl(27, 66%, 92%);
+    --bgc: hsl(33, 100%, 98%);
+}
+
+body{
+    background-color: var(--text-head-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main{
+    width: 100%;
+}
+
+/* Container styles */
+.container{
+    width: 95%;
+    min-width: 340px;
+    max-width: 450px;
+    margin: auto;
+}
+
+/* General style for balance info and % on component */
+.flex-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Head component */
+.component-head{
+    background-color: var(--head-bars);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    color: var(--text-head-bgc);
+}
+
+/* ----------- Head and body texts -----------*/
+
+.legend{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.text--fw{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* ----------- Head and body texts end ----------- */
+
+/* ----------- component-body styles ----------- */
+
+.component-body{
+    background-color: var(--bgc);
+    border-radius: .5rem;
+}
+
+.title{
+    color: var(--title-porcentage-money);
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.text-color{
+    color: var(--title-porcentage-money);
+    font-size: 1.5rem;;
+}
+
+
+.chart-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: .5rem;
+    margin: auto;
+    padding: 1rem 0;
+    width: 90%;
+    /* height: 13rem; */
+    border-bottom: 2px solid var(--text-head-bgc);
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.bar{
+    background-color: var(--head-bars);
+    border-radius: .2rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.day{
+    color: var(--total-from-days);
+    font-size: .7rem;
+}
+
+/* ----------- component-body styles end----------- */
+
+/* ----------- component-footer styles ----------- */
+
+.legend--color{
+    color: var(--total-from-days);
+    font-size: .8rem;
+}
+
+.text--fz{
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.amount{
+    background-color: var(--title-porcentage-money);
+    display: none;
+    width: 100%;
+    border-radius: .3rem;
+    padding: .5em;
+    color: var(--text-head-bgc);
+    font-size: .6rem;
+    text-align: center;
+}
+
+.chart:hover > .amount{
+    display: block;
+}
+.chart:hover > .bar{
+    opacity: .7;
+}
+
+.currentDay{
+    background-color: var(--actualDay);
+}
